@@ -1,0 +1,6 @@
+@AKYMicroservices.Email_HostAddress = http://localhost:5209
+
+GET {{AKYMicroservices.Email_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

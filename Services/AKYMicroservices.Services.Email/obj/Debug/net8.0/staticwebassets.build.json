@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FZ/nXt72+ZR5iNIVm2GcfrEsjg4+Q1ZduHW/Ta2Y94M=",
+  "Source": "AKYMicroservices.Services.Email",
+  "BasePath": "_content/AKYMicroservices.Services.Email",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
