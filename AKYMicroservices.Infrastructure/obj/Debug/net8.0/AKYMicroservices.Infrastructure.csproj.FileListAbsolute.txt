@@ -1,0 +1,17 @@
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Infrastructure.deps.json
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Infrastructure.runtimeconfig.json
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Infrastructure.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Infrastructure.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Domain.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/bin/Debug/net8.0/AKYMicroservices.Domain.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.csproj.AssemblyReference.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.AssemblyInfoInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.AssemblyInfo.cs
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicro.65F37B88.Up2Date
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/refint/AKYMicroservices.Infrastructure.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/AKYMicroservices.Infrastructure.genruntimeconfig.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Infrastructure/obj/Debug/net8.0/ref/AKYMicroservices.Infrastructure.dll

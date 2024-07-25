@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AKYMicroservices.Email")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f6493f5f5b284a9a0e46458b7098dd51e340a90")]
 [assembly: System.Reflection.AssemblyProductAttribute("AKYMicroservices.Email")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AKYMicroservices.Email")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

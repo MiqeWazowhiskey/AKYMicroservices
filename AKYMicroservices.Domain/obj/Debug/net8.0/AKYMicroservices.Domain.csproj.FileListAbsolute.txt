@@ -1,0 +1,11 @@
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/bin/Debug/net8.0/AKYMicroservices.Domain.deps.json
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/bin/Debug/net8.0/AKYMicroservices.Domain.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/bin/Debug/net8.0/AKYMicroservices.Domain.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.AssemblyInfoInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.AssemblyInfo.cs
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.csproj.CoreCompileInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/refint/AKYMicroservices.Domain.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/AKYMicroservices.Domain.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Domain/obj/Debug/net8.0/ref/AKYMicroservices.Domain.dll
