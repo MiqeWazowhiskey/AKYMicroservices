@@ -4,6 +4,7 @@ using AKYMicroservices.Infrastructure.Data;
 using AKYMicroservices.Infrastructure.Identity;
 using AKYMicroservices.Infrastructure.Repositories;
 using AKYMicroservices.Infrastructure.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
@@ -17,12 +18,17 @@ public static class ServiceRegistration
     {
         services.AddTransient(typeof(IRepository<,>), typeof(Repository<,>));
         services.AddScoped<IEmailService,EmailService>();
-        services.AddScoped<IApplicationUser, ApplicationUser>();
+        services.AddScoped<IAuthService,AuthService>();
+        services.AddTransient<IApplicationUser, ApplicationUser>();
+        services.AddScoped<IIdentityInitializer, IdentityInitializer>();
         services.AddDbContext<ApplicationDbContext>((sp, options) =>
         {
             options.AddInterceptors(sp.GetServices<ISaveChangesInterceptor>());
-
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
         });
+        
+        services.AddHttpContextAccessor();
+        services.AddIdentity<IApplicationUser,IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
     }
 }

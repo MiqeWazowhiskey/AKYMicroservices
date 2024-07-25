@@ -1,0 +1,15 @@
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/bin/Debug/net8.0/AKYMicroservices.Application.deps.json
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/bin/Debug/net8.0/AKYMicroservices.Application.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/bin/Debug/net8.0/AKYMicroservices.Application.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/bin/Debug/net8.0/AKYMicroservices.Domain.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/bin/Debug/net8.0/AKYMicroservices.Domain.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.csproj.AssemblyReference.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.AssemblyInfoInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.AssemblyInfo.cs
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.csproj.CoreCompileInputs.cache
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicro.B87E1637.Up2Date
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/refint/AKYMicroservices.Application.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/AKYMicroservices.Application.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/AKYMicroservices.Application/obj/Debug/net8.0/ref/AKYMicroservices.Application.dll

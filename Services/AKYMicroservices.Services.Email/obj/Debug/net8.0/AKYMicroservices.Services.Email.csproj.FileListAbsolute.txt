@@ -146,3 +146,9 @@
 /Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/AKYMicroservices.Infrastructure.dll
 /Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/AKYMicroservices.Infrastructure.pdb
 /Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/AKYMicroservices.Domain.pdb
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/MediatR.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/AKYMicroservices.Application.dll
+/Users/miqewazwohiskey/RiderProjects/AKYMicroservices/Services/AKYMicroservices.Services.Email/bin/Debug/net8.0/AKYMicroservices.Application.pdb

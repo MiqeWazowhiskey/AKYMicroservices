@@ -94,27 +94,7 @@ public class AuthService : IAuthService
                     Status = false,
                     ErrorMessage = "User already exists"
                 };
-            var userEmail = _context.HttpContext?.User.FindFirst(ClaimTypes.Email)?.Value;
-            if (userEmail is null)
-                return new RegisterResultVm()
-                {
-                    Status = false,
-                    ErrorMessage = "You are not authorized to create a user."
-                };
-            var createdBy = await _userManager.FindByEmailAsync(userEmail);
-            if (createdBy is null)
-                return new RegisterResultVm()
-                {
-                    Status = false,
-                    ErrorMessage = "You are not authorized to create a user."
-                };
-            var creatorRoles = await _userManager.GetRolesAsync(createdBy);
-            if (!creatorRoles.Contains("Admin"))
-                return new RegisterResultVm()
-                {
-                    Status = false,
-                    ErrorMessage = "You are not authorized to create a user."
-                };
+            
             var applicationUser = new ApplicationUser()
             {
                 Email = email,
@@ -122,12 +102,13 @@ public class AuthService : IAuthService
                 FirstName = firstName,
                 LastName = lastName,
                 CreatedAt = DateOnly.FromDateTime(DateTime.Now),
-                CreatedBy = createdBy.Id,
+                CreatedBy = "god",
                 Status = EntityStatus.Created,
+                Roles = []
             };
 
             await _userManager.CreateAsync(applicationUser, password);
-            await _userManager.AddToRoleAsync(applicationUser, "User");
+            await _userManager.AddToRoleAsync(applicationUser, "Admin");
             return new RegisterResultVm()
             {
                 Status = true,

@@ -1,7 +1,9 @@
 using System.Text;
 using AKYMicroservices.Application;
+using AKYMicroservices.Domain.Interfaces;
 using AKYMicroservices.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
@@ -61,7 +63,21 @@ builder.Services.AddAuthentication(opt=>
     });
 
 builder.Services.AddControllers();
+
+var myCorsPolicy = "MyPolicy";
+builder.Services.AddCors(options => options.AddPolicy(name: myCorsPolicy, policy =>
+{
+    policy.WithOrigins("http://localhost:4200","https://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+}));
 var app = builder.Build();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller}/{action=Index}/{id?}");
+app.Map("/", () => Results.Redirect("/swagger"));
+app.Map("/api", () => Results.Redirect("/swagger"));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -71,6 +87,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+using (var serviceScope = app.Services.CreateScope())
+{
+    var userManager = serviceScope.ServiceProvider.GetRequiredService<UserManager<IApplicationUser>>();
+    var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    var identityInitializer = serviceScope.ServiceProvider.GetRequiredService<IIdentityInitializer>();
+    await identityInitializer.InitializeAsync(userManager, roleManager);
+}
 
 app.Run();
 
