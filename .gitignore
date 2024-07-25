@@ -2,4 +2,5 @@ appsettings.json
 appsettings.Development.json
 *appsettings.json
 *appsettings.Development.json
-s
+.idea/*
+.idea/
