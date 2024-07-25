@@ -1,6 +1,0 @@
-@AKYMicroservices.Entity_HostAddress = http://localhost:5145
-
-GET {{AKYMicroservices.Entity_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
