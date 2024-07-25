@@ -1,29 +1,55 @@
+using System.Net;
+using System.Net.Mail;
 using AKYMicroservices.Domain.Entities;
 using AKYMicroservices.Domain.Interfaces;
 using AKYMicroservices.Domain.Repositories;
-using AKYMicroservices.Domain.ViewModals;
 using AKYMicroservices.Domain.ViewModals.Email;
-using AKYMicroservices.Infrastructure.Repositories;
+using Microsoft.Extensions.Configuration;
 
 namespace AKYMicroservices.Infrastructure.Services;
 
 public class EmailService: IEmailService
 {
     private readonly IRepository<Email, Guid> _repository;
-    public EmailService(IRepository<Email, Guid> repository)
+    private readonly IConfiguration _configuration;
+    public EmailService(IRepository<Email, Guid> repository, IConfiguration configuration)
     {
         _repository = repository;
+        _configuration = configuration;
     }
-    public async Task<EmailResponseVm> SendEmailAsync(EmailVm email)
+    public async Task<EmailResponseVm> SendEmailAsync(string to,string subject, string content)
     {
         try
         {
+            var mail = _configuration.GetSection("EmailSettings")["Mail"];
+            var password = _configuration.GetSection("EmailSettings")["Password"];
+
+            using (
+                SmtpClient client = new SmtpClient("smtp.gmail.com", port:587)
+                   {
+                       EnableSsl = true,
+                       UseDefaultCredentials = false,
+                       Credentials = new NetworkCredential(mail, password),
+                   }
+                )
+            {
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress(mail),
+                    Subject = subject,
+                    Body = content
+                };
+                mailMessage.To.Add(to);
+                await client.SendMailAsync(mailMessage);
+            }
+
+            
             var emailEntity = new Email
             {
-                From = email.From,
-                To = email.To,
-                Subject = email.Subject,
-                Content = email.Content,
+                From = mail,
+                To = to,
+                Subject = subject,
+                Content = content,
                 CreatedBy = new Guid(),
                 CreatedAt = DateTime.Now
             };

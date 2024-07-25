@@ -5,5 +5,5 @@ namespace AKYMicroservices.Domain.Interfaces;
 
 public interface IEmailService
 {
-    public Task<EmailResponseVm> SendEmailAsync(EmailVm email);
+    public Task<EmailResponseVm> SendEmailAsync(string to,string subject, string content);
 }
