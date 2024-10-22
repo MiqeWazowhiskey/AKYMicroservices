@@ -1,15 +1,12 @@
-name: .NET Build and Test
+name: Scheduled Bot
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  schedule:
+    # Her 15 dakikada bir çalıştır (cron tabanlı zamanlama)
+    - cron: '*/1 * * * *'
 
 jobs:
-  build:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,13 +16,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.x' # .NET 8 sürümünü kullanıyor
+        dotnet-version: '8.x' # .NET sürümünüze uygun şekilde ayarlayın
 
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Build project
-      run: dotnet build --configuration Release --no-restore
-
-    - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+    - name: Run the bot
+      run: dotnet run --project ./BotProject # Bot projenizin yolunu belirtin
