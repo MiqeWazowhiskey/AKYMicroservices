@@ -1,9 +1,9 @@
 name: Scheduled Bot
 
-on:
-  schedule:
-    # Her 15 dakikada bir çalıştır (cron tabanlı zamanlama)
-    - cron: '*/1 * * * *'
+#on:
+  # schedule:
+  #   # Her 15 dakikada bir çalıştır (cron tabanlı zamanlama)
+  #   - cron: '*/1 * * * *'
 
 jobs:
   run-bot:
